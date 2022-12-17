@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+  padding: 3em 1em;
+  background: #180148;
+  
+}
+.flex-container .flex-item {
+  margin: 25px;
+  border-radius: 2px;
+  padding: 4.5em 5em;
+  position: relative;
+  min-height: 260px;
+  border-radius:5px;
+  }
+.flex-container .flex-item:focus {
+        box-shadow: 0 0 3pt 2pt red;
+    }
+.flex-container .flex-item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-transition: 600ms ease;
+  transition: 600ms ease;
+  border-radius: 0px;
+}
+.flex-container .flex-item a span {
+  -webkit-transform: translateZ(50px) scale(0.7);
+          transform: translateZ(50px) scale(0.7);
+}
+
+.tilt {
+  box-shadow: 0 20px 30px -13px rgba(0, 0, 0, 0.7);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+          transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+}
+.tilt:hover {
+  box-shadow: 0 40px 70px -15px rgba(0, 0, 0, 0.7);
+}
+
+.bg-one {
+  background: linear-gradient(45deg, #ff194b, #8215f0);
+}
+
+.bg-two {
+  background: linear-gradient(45deg, #ff5f4b, #821564);
+}
+
+.bg-three {
+  background: linear-gradient(45deg, #ff00bb, #82000f);
+}
+
+.flex-item span > img {
+  width:200px;
+}
+.flex-item .text{
+  color:white;
+  font-weight:800;
+  font-family:Courier;
+  font-size:12px;
+  position:absolute;
+  bottom:20px;
+}
